@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Checkout Page | OyeTroubleMaker</title>
+</head>
+<body>
+  <header>
+    MADE BY ABHAY GUPTA
+  </header>
+  <div class="header">
+    <h1>Checkout</h1>
+  </div>
+  <main>
+    
+    <section class="productList">
+      
+      <div class="product">
+        <img src="photo1.png" alt="photo1">
+        <div class="details">
+          <span class="productName">Vintage Backbag</span>
+          <span>$45.54</span><span class="cutOff">56.65</span>
+          <br><br>
+          <div class="cartCount">
+            <div class="cartMinus">-</div>
+            <div class="actualCount">1</div>
+            <div class="cartPlus">+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="photo2.png" alt="photo2">
+        <div class="details">
+          <span class="productName">Vintage Shoes</span>
+          <span>$45.54</span><span class="cutOff">56.65</span>
+          <br><br>
+          <div class="cartCount">
+            <div class="cartMinus">-</div>
+            <div class="actualCount">1</div>
+            <div class="cartPlus">+</div>
+          </div>
+        </div>
+      </div>
+    <br><br><br>
+    <div class="shipping">Shipping <div class="val">$19</div>
+    </div><br><br><br>
+    <div class="total">Total <div class="val">$549</div>
+    </div>
+    </section>
+
+
+    <section class="customerDetails">
+      <div class="formPart">
+        <legend> <div class="head">Contact Information</div>
+          <label>Email <br> <input type="email" name="email"></label><br>
+          <label>Phone <br><input type="tel" name="phone"></label>
+        </legend><br>
+        
+        <legend><div class="head">Shipping Details</div>
+        <label>Full Name<br><input type="text" name="name"></label><br>
+        <label>Address<br><input type="text" name="addr"></label><br>
+        <label>City<br><input type="text" name="city"></label><br>
+        <label>Country <br><select name="country"> 
+          <option value="none">Your Country</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="Lokhnadwala">Lokhnadwala</option>
+        </select> </label><br><br>
+        </legend>
+        <div class="checkbox">
+          <input type="checkbox" name="save">&nbsp; <span style="margin-left: -3%;
+    vertical-align: middle;"> Save this info for next time<br></span>
+        </div> <br>
+        <input type="submit" value="Continue">
+</div>
+    </section>
+
+  </main>
+
+  <div class="forMobileAlert">
+    <div class="close" onclick="forMobileAlertJS()">X</div>
+    Please view this page in Desktop or Larger Screens for Best Expirence
+  </div>
+  <footer>
+    © Abhay Gupta <br> 🔯 Task in devchallanges.io 🔯
+  </footer>
+  
+  <script>
+    function forMobileAlertJS() {
+      var x = document.getElementsByClassName('forMobileAlert');
+      x[0].style.display = "none";
+    }
+  </script>
+</body>
+</html>

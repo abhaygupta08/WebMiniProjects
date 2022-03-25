@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins;
+}
+body{
+    background:royalblue;
+    color:white;
+    display:flex;
+    width:100vw;
+    height:100vh;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+main{
+    background: #1f1f1f;
+    border-radius: 5px;
+    width:clamp(300px,40%,350px);
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 2px 13px 2px rgba(0,0,0,0.33);
+-webkit-box-shadow: 3px 2px 13px 2px rgba(0,0,0,0.33);
+-moz-box-shadow: 3px 2px 13px 2px rgba(0,0,0,0.33);
+}
+main h2{
+    margin-top:20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+}
+label{
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    margin: 20px 0px;
+    /* width:100%; */
+    align-items: flex-start;
+}
+input[type="email"],input[type="password"]{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: transparent;
+}
+#chkBox{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    margin: 5px 0px;
+}
+#chkBox input{
+    margin-right:10px;
+    height:100%;
+}
+input[type="submit"]{
+    margin: 20px 0px;
+    border:1px solid white;
+    background:transparent;
+    color: white;
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    color: #1f1f1f;
+    background:white;
+}   
+input{
+    font-size: 100%;
+    padding:5px;
+    outline:none;
+    color:white;
+}
+label div{
+    padding:5px;
+    position: absolute;
+    pointer-events:none;
+    transition: all 0.5s;
+}
+
+input.hoverInput{
+    border-bottom:0.5px solid rgba(255, 255, 255, 0.096);
+}

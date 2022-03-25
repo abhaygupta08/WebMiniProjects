@@ -1,0 +1,216 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* min-width: 550px; */
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(24, 24, 24, 0.788);
+    /* margin-bottom: 3%; */
+    border-bottom:5px solid  rgba(0, 128, 128, 0.089);
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .formPart{
+    padding:20px;
+    /* border: 2px solid wheat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .formPart legend {
+    width:100%;
+}
+main .formPart legend .head{
+    /* color:red; */
+    font-weight: 500;
+    font-size: 1.5rem;;
+    margin-bottom: 4%;
+}
+label{
+margin-left: 7%;
+font-weight: 300;
+/* margin-bottom: 2?/7px; */
+}
+input,select{
+    border-radius: 20px;
+    padding:7px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+.checkbox{
+    display: flex;
+    /* margin-right: -20px; */
+    align-self: flex-start;
+    width:100%;
+    align-items: center;
+}
+input[type="checkbox"]{
+    width:8%;
+}
+select:focus,input:focus{
+    outline:none;
+    /* color: rgb(134, 126, 126); */
+    border:2px solid rgb(235, 235, 235);
+}
+ input[type="submit"]{
+    padding: 3%; 
+    background-color: teal;
+     border: none;
+     
+ }
+
+
+ main .productList{
+    width:55%;
+    padding-left: 3%;
+    /* font-size: 0.8rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ }
+ main .productList .product{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     justify-content: center;
+     align-items: stretch;
+     margin-bottom: 5%;
+     /* flex-wrap: wrap; */
+ }
+.productName{
+    font-weight: 600;
+
+}
+ main .productList .product .details{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     /* justify-content: center; */
+     align-items: center;
+ }
+ .customerDetails{
+     justify-self: flex-start;
+    align-self: center;
+     width:45%;
+ }
+.cutOff{
+    /* align-self: flex-end; */
+    text-decoration: line-through;
+}
+ 
+ main .productList .product .cartCount{
+     display: flex;
+     flex-direction: row;
+     width:100%;
+     align-items: stretch;
+     justify-content: center;
+ }
+ main .productList .product .cartCount .cartMinus{
+    width:25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 12px 0px 0px 12px;
+    border: 2px solid rgba(8, 8, 8, 0.336);
+    border-right: none;
+    
+
+}
+ main .productList .product .cartCount .actualCount{
+    width:25px;
+    height: 25px;
+    text-align: center;
+    border: 2px solid rgba(8, 8, 8, 0.336);
+}
+ main .productList .product .cartCount .cartPlus{
+    width:25px;
+    height: 25px;
+    border-radius: 0px 12px 12px 0px;
+    text-align: center;
+    border: 2px solid rgba(8, 8, 8, 0.336);
+    border-left: none;
+}
+
+.total,.shipping{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border-bottom: 2px solid #14141427;
+    padding-bottom: 5%;
+}
+.forMobileAlert{
+    display: none;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.27);
+    padding:2%;
+    margin-top: 4%;
+}
+
+@media (max-width:768px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .customerDetails{
+        width: 90%;
+        margin-top: 70px;
+    }
+    main .productList{
+        width: 90%;
+        justify-content: flex-start;
+    }
+    main .productList .product{
+        padding-left: 5%;
+    }
+    .forMobileAlert{
+        display: flex;
+        position:fixed;
+        bottom:0;
+        width: 100%;
+        right:0;
+        background-color: rgba(58, 58, 58, 0.82);
+        padding:20px;
+    }    
+    .close{
+        position: fixed;
+        right:0px;
+        margin-right: 20px;
+        /* bottom:20px; */
+        cursor: pointer;
+    }
+
+}

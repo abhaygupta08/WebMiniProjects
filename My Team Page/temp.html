@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        img{
+            width:100%;
+        }
+        .photo{
+            display: flex;
+        }
+        .mainPhoto{
+            display: flex;
+            flex-direction: column;
+            width:20%;
+        }
+        .designation{
+            transform: rotate(90deg);
+            position: absolute;
+            top:5%;
+            left:19%;
+        }
+        @media (max-width:980px){
+            .designation{
+                position: absolute;
+                left:18%;
+            }
+        @media (max-width:660px){
+            .designation{
+                position: absolute;
+                left:17%;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="photo">
+        <div class="mainPhoto">
+            <img src="photo1.png">
+            <span class="mainName">Name hai ye Mera</span>
+        </div>
+        <span class="designation">Director</span>
+    </div>
+</body>
+</html>

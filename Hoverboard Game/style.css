@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1f1f1f;
+    display:flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 50px;
+    width:425px;
+    /* height:525px; */
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.box{
+    background: #53535393;
+    height:30px;
+    width:30px;
+    display: inline-block;
+    margin: 2px;
+    transition:background 2s ease;
+}
+.box:hover{
+    transition-duration: 0s;
+}
+.box.red:hover{
+    background:red;
+}
+
+.box.blue:hover{
+    background:blue;
+}
+
+.box.green:hover{
+    background:green;
+}
+
+.box.yellow:hover{
+    background:yellow;
+}

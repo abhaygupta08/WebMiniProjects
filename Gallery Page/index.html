@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Gallery</title>
+</head>
+<body>
+  <main>
+    <section class="ProfileStats">
+      <img src="profilePhoto.png" alt="profilePhoto">
+      <span class="name">Abhay Gupta</span>
+      <span class="location">RaeBareli, India</span>
+      <div class="stats">
+        <div class="statsPro"><span>100</span><span>Posts</span></div>
+        <div class="seprator">|</div>
+        <div class="statsPro"><span>100</span><span>Follower</span></div>
+        <div class="seprator">|</div>
+        <div class="statsPro"><span>100</span><span>Following</span></div>
+      </div>
+    </section>
+
+    <section class="imgPart">
+      <img src="photo1.png" alt="">
+      <img src="photo2.png" alt="">
+        <div class="second">      
+          <img src="photo3.png" alt="">
+          <div class="secondLine">
+            <img src="photo5.png" alt="">
+            <img src="photo6.png" alt="">
+          </div>
+        </div>
+          <img src="photo4.png" alt="" width="50%" height="50%">
+      
+    </section>
+  </main>
+  <div class="forMobileAlert"><div class="close" onclick="forMobileAlertJS()">X</div>
+    Please view this page in Desktop or Larger Screens for Best Expirence</div>
+  <footer>
+    © Abhay Gupta <br> 🔯 Task in devchallanges.io 🔯
+  </footer>
+
+  <script>
+    function forMobileAlertJS() {
+      var x = document.getElementsByClassName('forMobileAlert');
+      x[0].style.display = "none";
+    }
+  </script>
+</body>
+</html>

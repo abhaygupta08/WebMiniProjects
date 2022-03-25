@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Poppins;
+}
+main{
+    background-color:red;
+    height:100vh;
+    width:100vw;
+    display:flex;
+}
+section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:50%;
+    transition:width 1s;
+    height:100vh;
+    color:white;
+}
+section.left{
+    background-color: yellowgreen;
+}
+section.right{
+    background-color: rebeccapurple;
+}
+
+
+
+section.left:hover{
+    width:85%;
+}
+section.left:hover section.right{
+    width:15%;
+}
+
+section.right:hover{
+    width:85%;
+}
+section.right:hover section.left{
+    width:15%;
+}

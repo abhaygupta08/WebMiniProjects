@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.loginSignUp{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    height:80vh;
+    flex-wrap: wrap;
+    position:absolute;
+    background-color: aqua;
+}
+#closeloginSignUp{
+    background:black;
+    height:20px;
+    width:20px;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    position: absolute;
+    right:-1vw;
+    top:-1vh;
+    border-radius: 40px ;
+    cursor: pointer;
+}
+.loginPanel{
+    background:cornflowerblue;
+    width:50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginPanel form,.signUpPanel form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:70%;
+    height: 50%;
+}
+.signUpPanel{
+    background:rgb(0, 238, 255);
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpPanel form{
+    display:none;
+}
+#loginPanelBtn{
+    display: none;
+}
+/*full screen for loginSignup*/
+.container{
+    display:none;
+}
+@media (max-width:568px){
+    .loginSignUp{
+        flex-direction: row ;
+    }
+    #closeloginSignUp{
+        right:-2vw;
+        top:78.5vh;
+    }
+    .loginPanel{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .signUpPanel{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*random - delete it*/
+input[type="text"],input[type="submit"],input[type="button"]{
+    padding:2%;
+    font-size: 100%;
+    outline:none;
+    border:none;
+}
+input[type="text"]{
+    border-radius: 5px;
+}
+input[type="button"],input[type="submit"]{
+    cursor: pointer;
+    border-radius: 30px;
+}
